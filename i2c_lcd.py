@@ -96,6 +96,8 @@ class Lcd(object):
       self.write(LCD_CLEARDISPLAY)
       self.write(LCD_ENTRYMODESET | LCD_ENTRYLEFT)
 
+      sleep(0.05)
+
    def reset(self):
       self.write(0x03)
       self.write(0x03)
